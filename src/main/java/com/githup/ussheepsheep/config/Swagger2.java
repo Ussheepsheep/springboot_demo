@@ -1,4 +1,4 @@
-package com.example.config;
+package com.githup.ussheepsheep.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,15 +22,15 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.web"))
+                .apis(RequestHandlerSelectors.basePackage("com.githup.ussheepsheep.web"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Spring Boot Daren Test")
-                .description("wu daren test ")
+                .title("Spring Boot Daemon Test")
+                .description("daemon test ")
                 .version("1.0")
                 .build();
     }

@@ -1,6 +1,6 @@
-package com.example.web;
+package com.githup.ussheepsheep.web;
 
-import com.example.domain.User;
+import com.githup.ussheepsheep.domain.User;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 

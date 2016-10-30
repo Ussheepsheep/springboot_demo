@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.githup.ussheepsheep.domain;
 
 import lombok.Data;
 
