@@ -1,0 +1,4 @@
+server:
+  port: 8081
+  uuid: ${random.int(200000,299999)}
+  desc: prod enviroment

@@ -1,0 +1,4 @@
+server:
+  port: 8081
+  uuid: ${random.int[100000,199999]}
+  desc: dev enviroment

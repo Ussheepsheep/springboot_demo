@@ -1,0 +1,4 @@
+server:
+  port: 8081
+  uuid: ${random.int[300000,399999]}
+  desc: test enviroment
