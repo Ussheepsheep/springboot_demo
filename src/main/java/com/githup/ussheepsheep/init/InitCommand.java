@@ -21,6 +21,6 @@ public class InitCommand implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-        logger.info("server uuid : {}, port : {}, desc : {}", serverConfig.getUuid(), serverConfig.getPort(), serverConfig.getDesc());
+        logger.info("server uuid : {}, port : {}, goodDesc : {}", serverConfig.getUuid(), serverConfig.getPort(), serverConfig.getDesc());
     }
 }

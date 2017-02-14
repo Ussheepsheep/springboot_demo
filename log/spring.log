@@ -100,8 +100,8 @@
 2017-02-10 15:28:30.039  INFO 10028 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@138e71fc: startup date [Fri Feb 10 15:28:30 CST 2017]; root of context hierarchy
 2017-02-10 15:28:30.976  INFO 10028 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2017-02-10 15:28:30.985  INFO 10028 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-02-10 15:28:30.990  WARN 10028 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Lorg/apache/logging/log4j/Logger;
-2017-02-10 15:28:30.996 ERROR 10028 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' threw an exception
+2017-02-10 15:28:30.990  WARN 10028 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with goodName 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Lorg/apache/logging/log4j/Logger;
+2017-02-10 15:28:30.996 ERROR 10028 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with goodName 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' threw an exception
 
 java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@138e71fc: startup date [Fri Feb 10 15:28:30 CST 2017]; root of context hierarchy
 	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
@@ -127,7 +127,7 @@ java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - c
 	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.1.RELEASE.jar:1.5.1.RELEASE]
 
-2017-02-10 15:28:31.158 ERROR 10028 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+2017-02-10 15:28:31.158 ERROR 10028 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with goodName 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
 
 java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@138e71fc: startup date [Fri Feb 10 15:28:30 CST 2017]; root of context hierarchy
 	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
@@ -155,7 +155,7 @@ java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - c
 
 2017-02-10 15:28:31.164 ERROR 10028 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Lorg/apache/logging/log4j/Logger;
+org.springframework.beans.factory.BeanCreationException: Error creating bean with goodName 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Lorg/apache/logging/log4j/Logger;
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
 	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
@@ -695,7 +695,7 @@ Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.Logger
 2017-02-10 15:45:16.152  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
 2017-02-10 15:45:16.153  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
 2017-02-10 15:45:16.180  INFO 10524 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
-2017-02-10 15:45:16.182  INFO 10524 --- [restartedMain] c.g.u.i.InitCommand                      : server uuid : 179892, port : 8081, desc : dev enviroment
+2017-02-10 15:45:16.182  INFO 10524 --- [restartedMain] c.g.u.i.InitCommand                      : server uuid : 179892, port : 8081, goodDesc : dev enviroment
 2017-02-10 15:45:16.183  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : Started DemoApplication in 2.089 seconds (JVM running for 542.212)
 2017-02-10 17:32:59.581  INFO 10524 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3219a486: startup date [Fri Feb 10 15:45:14 CST 2017]; root of context hierarchy
 2017-02-10 17:32:59.620  INFO 10524 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
