@@ -697,3 +697,5 @@ Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.Logger
 2017-02-10 15:45:16.180  INFO 10524 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
 2017-02-10 15:45:16.182  INFO 10524 --- [restartedMain] c.g.u.i.InitCommand                      : server uuid : 179892, port : 8081, desc : dev enviroment
 2017-02-10 15:45:16.183  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : Started DemoApplication in 2.089 seconds (JVM running for 542.212)
+2017-02-10 17:32:59.581  INFO 10524 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3219a486: startup date [Fri Feb 10 15:45:14 CST 2017]; root of context hierarchy
+2017-02-10 17:32:59.620  INFO 10524 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

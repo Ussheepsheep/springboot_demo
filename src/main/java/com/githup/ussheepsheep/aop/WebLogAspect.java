@@ -2,11 +2,9 @@ package com.githup.ussheepsheep.aop;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -25,10 +23,11 @@ public class WebLogAspect {
     private Logger logger = LogManager.getLogger(getClass());
 
     @Pointcut("execution(public * com.githup.ussheepsheep.web..*.*(..))")
-    public void weblog(){}
+    public void weblog() {
+    }
 
     @Around("weblog()")
-    public Object around(ProceedingJoinPoint joinPoint){
+    public Object around(ProceedingJoinPoint joinPoint) {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         Long start = System.currentTimeMillis();
