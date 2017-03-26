@@ -1,4 +1,4 @@
-package com.githup.ussheepsheep.persistence.repository;
+package com.githup.ussheepsheep.repository;
 
 import com.githup.ussheepsheep.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;

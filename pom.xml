@@ -102,17 +102,6 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${swagger.version}</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.fasterxml.jackson.core</groupId>-->
-            <!--<artifactId>jackson-databind</artifactId>-->
-            <!--&lt;!&ndash;<version>2.8.7</version>&ndash;&gt;-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>com.fasterxml.jackson.core</groupId>-->
-            <!--<artifactId>jackson-core</artifactId>-->
-            <!--&lt;!&ndash;<version>2.8.7</version>&ndash;&gt;-->
-        <!--</dependency>-->
-
 
         <dependency>
             <groupId>mysql</groupId>
