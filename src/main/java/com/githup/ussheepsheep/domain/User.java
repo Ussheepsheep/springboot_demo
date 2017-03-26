@@ -1,35 +1,28 @@
 package com.githup.ussheepsheep.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.sun.istack.internal.NotNull;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import org.hibernate.validator.constraints.Email;
+
+import javax.persistence.*;
 
 /**
  * Created by daren on 2016/9/12.
  */
 
 @Data
-@ApiModel("用户")
-public class User{
+@Table
+@Entity
+public class User {
 
-    @NotNull
-    @JsonIgnore
-    @ApiModelProperty("id")
+    @Id
+    @GeneratedValue
     private Long id;
 
-    @Email
-    @NotNull
-    @ApiModelProperty("email")
+    @Column
     private String email;
 
-    @ApiModelProperty("用户昵称")
-    private String nickname;
-
-    @NotNull
-    @ApiModelProperty("用户密码")
+    @Column
     private String password;
 
     @JsonIgnore

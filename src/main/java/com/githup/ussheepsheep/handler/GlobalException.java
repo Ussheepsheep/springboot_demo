@@ -14,23 +14,24 @@ public class GlobalException {
     /**
      * 错误信息类
      */
-    private class ErrorInfo{
+    private class ErrorInfo {
         boolean result = false;
         String message = "";
 
-        public ErrorInfo(String message){
+        public ErrorInfo(String message) {
             this.message = message;
         }
     }
 
     /**
      * 处理验证出现异常的情况
+     *
      * @param e
      * @return
      */
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
     @ResponseBody
-    public ErrorInfo methodArgumentNotValidExceptionHandler(MethodArgumentNotValidException e){
+    public ErrorInfo methodArgumentNotValidExceptionHandler(MethodArgumentNotValidException e) {
         ErrorInfo errorInfo = new ErrorInfo(e.getBindingResult().getFieldError().getDefaultMessage());
         return errorInfo;
     }

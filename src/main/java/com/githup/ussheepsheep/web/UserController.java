@@ -1,11 +1,13 @@
 package com.githup.ussheepsheep.web;
 
-import com.githup.ussheepsheep.domain.User;
-import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
-import java.util.*;
+import com.githup.ussheepsheep.domain.form.UserForm;
+import com.githup.ussheepsheep.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by daren on 2016/9/12.
@@ -13,31 +15,19 @@ import java.util.*;
 @RestController
 @RequestMapping("/user")
 public class UserController {
-    static Map<String, User> map = Collections.synchronizedMap(new HashMap<>());
 
+        @Autowired
+        private UserService userService;
 
-    @ApiOperation(value = "获取用户列表")
-    @RequestMapping(value = "/users", method = RequestMethod.GET)
-    public List<User> getUsers(){
-        List<User> users = new ArrayList<>(map.values());
-        return users;
-    }
-
-    @ApiOperation(value = "获取指定id的用户信息")
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public User getUser(@PathVariable Long id){
-        User user = map.get(id);
-        return user;
-    }
-
-    @ApiOperation(value = "添加新用户")
-    @RequestMapping(value = "/", method = RequestMethod.POST)
-    public Object addUser(@RequestBody @Valid User user){
-        user.setId(System.currentTimeMillis());
-        if(map.get(user.getEmail()) != null){
-            return "该邮箱被使用";
+        @PostMapping(value = "/login")
+        public ResponseEntity login (@RequestBody UserForm userForm){
+            userService.login(userForm.getEmail(), userForm.getPassword());
+            return ResponseEntity.ok().build();
         }
-        map.put(user.getEmail(), user);
-        return user;
+
+        @PostMapping(value = "/register")
+        public ResponseEntity register (@RequestBody UserForm userForm){
+            userService.register(userForm.getEmail(), userForm.getPassword());
+            return ResponseEntity.ok().build();
+        }
     }
-}

@@ -1,0 +1,701 @@
+2017-02-10 11:57:13.007  INFO 10028 --- [restartedMain] com.githup.ussheepsheep.DemoApplication  : Starting DemoApplication on daren with PID 10028 (E:\githup\springboot_demo\target\classes started by yjServer1 in E:\githup\springboot_demo)
+2017-02-10 11:57:13.008  INFO 10028 --- [restartedMain] com.githup.ussheepsheep.DemoApplication  : The following profiles are active: dev
+2017-02-10 11:57:13.099  INFO 10028 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cfe1ef1: startup date [Fri Feb 10 11:57:13 CST 2017]; root of context hierarchy
+2017-02-10 11:57:15.317  INFO 10028 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 11:57:15.399  INFO 10028 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 11:57:16.104  INFO 10028 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-02-10 11:57:16.120  INFO 10028 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-02-10 11:57:16.121  INFO 10028 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-02-10 11:57:16.226  INFO 10028 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-02-10 11:57:16.226  INFO 10028 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3131 ms
+2017-02-10 11:57:16.404  INFO 10028 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-02-10 11:57:16.409  INFO 10028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-02-10 11:57:16.410  INFO 10028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-02-10 11:57:16.410  INFO 10028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-02-10 11:57:16.410  INFO 10028 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-02-10 11:57:17.234  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.addUser(com.githup.ussheepsheep.domain.User)
+2017-02-10 11:57:17.235  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.login(com.githup.ussheepsheep.domain.form.LoginForm)
+2017-02-10 11:57:17.236  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/users],methods=[GET]}" onto public java.util.List<com.githup.ussheepsheep.domain.User> com.githup.ussheepsheep.web.UserController.getUsers()
+2017-02-10 11:57:17.237  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public com.githup.ussheepsheep.domain.User com.githup.ussheepsheep.web.UserController.getUser(java.lang.Long)
+2017-02-10 11:57:17.237  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-02-10 11:57:17.241  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-02-10 11:57:17.241  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-02-10 11:57:17.242  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-02-10 11:57:17.245  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-10 11:57:17.246  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-10 11:57:17.527  INFO 10028 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cfe1ef1: startup date [Fri Feb 10 11:57:13 CST 2017]; root of context hierarchy
+2017-02-10 11:57:17.601  INFO 10028 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 11:57:17.601  INFO 10028 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 11:57:17.649  INFO 10028 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 11:57:18.002  INFO 10028 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-02-10 11:57:18.072  INFO 10028 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-10 11:57:18.086  INFO 10028 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-02-10 11:57:18.109  INFO 10028 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2017-02-10 11:57:18.117  INFO 10028 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-02-10 11:57:18.123  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 11:57:18.125  INFO 10028 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 11:57:18.127  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 11:57:18.127  INFO 10028 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 11:57:18.128  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 11:57:18.128  INFO 10028 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUsers belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 11:57:18.128  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 11:57:18.128  INFO 10028 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 11:57:18.132  INFO 10028 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-02-10 11:57:18.152  INFO 10028 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-02-10 11:57:18.153  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 11:57:18.156  INFO 10028 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-02-10 11:57:18.156  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 11:57:18.165  INFO 10028 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 11:57:18.165  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 11:57:18.190  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 11:57:18.194  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 11:57:18.201  INFO 10028 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.202  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.203  INFO 10028 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.204  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.241  INFO 10028 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.241  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.242  INFO 10028 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.242  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.243  INFO 10028 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 11:57:18.243  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 11:57:18.251  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 11:57:18.254  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 11:57:18.256  INFO 10028 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 11:57:18.256  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 11:57:18.257  INFO 10028 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 11:57:18.257  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 11:57:18.258  INFO 10028 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.258  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.259  INFO 10028 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 11:57:18.260  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 11:57:18.266  INFO 10028 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.266  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 11:57:18.267  INFO 10028 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 11:57:18.268  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 11:57:18.283  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 11:57:18.310  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 11:57:18.319  INFO 10028 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 11:57:18.319  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 11:57:18.320  INFO 10028 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 11:57:18.320  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 11:57:18.321  INFO 10028 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 11:57:18.321  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 11:57:18.321  INFO 10028 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 11:57:18.322  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 11:57:18.322  INFO 10028 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-02-10 11:57:18.322  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 11:57:18.323  INFO 10028 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2017-02-10 11:57:18.323  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 11:57:18.323  INFO 10028 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 11:57:18.323  INFO 10028 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 11:57:18.325  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 11:57:18.326  INFO 10028 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 11:57:18.406  INFO 10028 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-02-10 11:57:18.413  INFO 10028 --- [restartedMain] com.githup.ussheepsheep.DemoApplication  : Started DemoApplication in 5.924 seconds (JVM running for 6.481)
+2017-02-10 15:28:29.322  INFO 10028 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cfe1ef1: startup date [Fri Feb 10 11:57:13 CST 2017]; root of context hierarchy
+2017-02-10 15:28:29.411  INFO 10028 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-02-10 15:28:30.026  INFO 10028 --- [restartedMain] com.githup.ussheepsheep.DemoApplication  : Starting DemoApplication on daren with PID 10028 (E:\githup\springboot_demo\target\classes started by yjServer1 in E:\githup\springboot_demo)
+2017-02-10 15:28:30.027  INFO 10028 --- [restartedMain] com.githup.ussheepsheep.DemoApplication  : The following profiles are active: dev
+2017-02-10 15:28:30.039  INFO 10028 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@138e71fc: startup date [Fri Feb 10 15:28:30 CST 2017]; root of context hierarchy
+2017-02-10 15:28:30.976  INFO 10028 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:28:30.985  INFO 10028 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:28:30.990  WARN 10028 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with goodName 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Lorg/apache/logging/log4j/Logger;
+2017-02-10 15:28:30.996 ERROR 10028 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with goodName 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@138e71fc: startup date [Fri Feb 10 15:28:30 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:555) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at com.githup.ussheepsheep.DemoApplication.main(DemoApplication.java:14) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+
+2017-02-10 15:28:31.158 ERROR 10028 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with goodName 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@138e71fc: startup date [Fri Feb 10 15:28:30 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:555) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at com.githup.ussheepsheep.DemoApplication.main(DemoApplication.java:14) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+
+2017-02-10 15:28:31.164 ERROR 10028 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with goodName 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Lorg/apache/logging/log4j/Logger;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:235) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:702) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:527) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151) [spring-boot-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at com.githup.ussheepsheep.DemoApplication.main(DemoApplication.java:14) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_31]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_31]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_31]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+Caused by: java.lang.NoClassDefFoundError: Lorg/apache/logging/log4j/Logger;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_31]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2575) ~[na:1.8.0_31]
+	at java.lang.Class.getDeclaredFields(Class.java:1908) ~[na:1.8.0_31]
+	at org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory.compiledByAjc(AbstractAspectJAdvisorFactory.java:92) ~[spring-aop-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory.isAspect(AbstractAspectJAdvisorFactory.java:77) ~[spring-aop-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:103) ~[spring-aop-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:90) ~[spring-aop-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103) ~[spring-aop-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248) ~[spring-aop-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 19 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.Logger
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:372) ~[na:1.8.0_31]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361) ~[na:1.8.0_31]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_31]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:360) ~[na:1.8.0_31]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_31]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308) ~[na:1.8.0_31]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_31]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:151) ~[spring-boot-devtools-1.5.1.RELEASE.jar:1.5.1.RELEASE]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_31]
+	... 31 common frames omitted
+
+2017-02-10 15:29:31.915  INFO 6280 --- [restartedMain] c.g.u.DemoApplication                    : Starting DemoApplication on daren with PID 6280 (E:\githup\springboot_demo\target\classes started by yjServer1 in E:\githup\springboot_demo)
+2017-02-10 15:29:31.920  INFO 6280 --- [restartedMain] c.g.u.DemoApplication                    : The following profiles are active: dev
+2017-02-10 15:29:32.023  INFO 6280 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b7f03ef: startup date [Fri Feb 10 15:29:32 CST 2017]; root of context hierarchy
+2017-02-10 15:29:33.560  INFO 6280 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:29:33.652  INFO 6280 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:29:34.406  INFO 6280 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-02-10 15:29:34.419  INFO 6280 --- [restartedMain] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-02-10 15:29:34.421  INFO 6280 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-02-10 15:29:34.516  INFO 6280 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-02-10 15:29:34.516  INFO 6280 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2497 ms
+2017-02-10 15:29:34.729  INFO 6280 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-02-10 15:29:34.734  INFO 6280 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-02-10 15:29:34.734  INFO 6280 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-02-10 15:29:34.734  INFO 6280 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-02-10 15:29:34.735  INFO 6280 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-02-10 15:29:35.888  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.login(com.githup.ussheepsheep.domain.form.LoginForm)
+2017-02-10 15:29:35.890  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.addUser(com.githup.ussheepsheep.domain.User)
+2017-02-10 15:29:35.890  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/users],methods=[GET]}" onto public java.util.List<com.githup.ussheepsheep.domain.User> com.githup.ussheepsheep.web.UserController.getUsers()
+2017-02-10 15:29:35.890  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public com.githup.ussheepsheep.domain.User com.githup.ussheepsheep.web.UserController.getUser(java.lang.Long)
+2017-02-10 15:29:35.891  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-02-10 15:29:35.893  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-02-10 15:29:35.894  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-02-10 15:29:35.895  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-02-10 15:29:35.898  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-10 15:29:35.898  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-10 15:29:36.216  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b7f03ef: startup date [Fri Feb 10 15:29:32 CST 2017]; root of context hierarchy
+2017-02-10 15:29:36.288  INFO 6280 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:29:36.288  INFO 6280 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:29:36.328  INFO 6280 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:29:36.575  INFO 6280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-02-10 15:29:36.632  INFO 6280 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-10 15:29:36.646  INFO 6280 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-02-10 15:29:36.672  INFO 6280 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2017-02-10 15:29:36.680  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-02-10 15:29:36.685  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:29:36.687  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:29:36.689  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:29:36.689  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:29:36.690  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:29:36.690  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUsers belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:29:36.691  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:29:36.691  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:29:36.695  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-02-10 15:29:36.724  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:29:36.724  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 15:29:36.728  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:29:36.729  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 15:29:36.738  INFO 6280 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:29:36.738  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:29:36.760  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:29:36.764  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:29:36.773  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.773  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.776  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.776  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.813  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.813  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.814  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.814  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.815  INFO 6280 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:29:36.815  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:29:36.824  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:29:36.826  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:29:36.828  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:29:36.829  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:29:36.829  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:29:36.829  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:29:36.829  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.830  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.830  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:29:36.830  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:29:36.835  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.835  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:29:36.835  INFO 6280 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 15:29:36.835  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 15:29:36.840  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:29:36.861  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:29:36.865  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:29:36.865  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:29:36.866  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:29:36.866  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:29:36.868  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:29:36.868  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:29:36.868  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:29:36.868  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:29:36.869  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:29:36.869  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 15:29:36.869  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:29:36.869  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 15:29:36.871  INFO 6280 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 15:29:36.871  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 15:29:36.874  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:29:36.877  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:29:36.949  INFO 6280 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-02-10 15:29:36.959  INFO 6280 --- [restartedMain] c.g.u.DemoApplication                    : Started DemoApplication in 5.813 seconds (JVM running for 6.644)
+2017-02-10 15:29:45.240  INFO 6280 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-02-10 15:29:45.240  INFO 6280 --- [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2017-02-10 15:29:45.277  INFO 6280 --- [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2017-02-10 15:30:46.326  INFO 6280 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b7f03ef: startup date [Fri Feb 10 15:29:32 CST 2017]; root of context hierarchy
+2017-02-10 15:30:46.344  INFO 6280 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-02-10 15:30:46.895  INFO 6280 --- [restartedMain] c.g.u.DemoApplication                    : Starting DemoApplication on daren with PID 6280 (E:\githup\springboot_demo\target\classes started by yjServer1 in E:\githup\springboot_demo)
+2017-02-10 15:30:46.896  INFO 6280 --- [restartedMain] c.g.u.DemoApplication                    : The following profiles are active: dev
+2017-02-10 15:30:46.899  INFO 6280 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13d8900c: startup date [Fri Feb 10 15:30:46 CST 2017]; root of context hierarchy
+2017-02-10 15:30:47.910  INFO 6280 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:30:47.917  INFO 6280 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:30:48.077  INFO 6280 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-02-10 15:30:48.078  INFO 6280 --- [restartedMain] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-02-10 15:30:48.078  INFO 6280 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-02-10 15:30:48.086  INFO 6280 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-02-10 15:30:48.087  INFO 6280 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1188 ms
+2017-02-10 15:30:48.157  INFO 6280 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-02-10 15:30:48.158  INFO 6280 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-02-10 15:30:48.160  INFO 6280 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-02-10 15:30:48.160  INFO 6280 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-02-10 15:30:48.160  INFO 6280 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-02-10 15:30:48.515  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.login(com.githup.ussheepsheep.domain.form.LoginForm)
+2017-02-10 15:30:48.516  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.addUser(com.githup.ussheepsheep.domain.User)
+2017-02-10 15:30:48.516  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/users],methods=[GET]}" onto public java.util.List<com.githup.ussheepsheep.domain.User> com.githup.ussheepsheep.web.UserController.getUsers()
+2017-02-10 15:30:48.516  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public com.githup.ussheepsheep.domain.User com.githup.ussheepsheep.web.UserController.getUser(java.lang.Long)
+2017-02-10 15:30:48.516  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-02-10 15:30:48.519  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-02-10 15:30:48.519  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-02-10 15:30:48.519  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-02-10 15:30:48.521  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-10 15:30:48.521  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-10 15:30:48.609  INFO 6280 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13d8900c: startup date [Fri Feb 10 15:30:46 CST 2017]; root of context hierarchy
+2017-02-10 15:30:48.628  INFO 6280 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:30:48.628  INFO 6280 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:30:48.648  INFO 6280 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:30:48.737  INFO 6280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-02-10 15:30:48.788  INFO 6280 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-10 15:30:48.800  INFO 6280 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-02-10 15:30:48.801  INFO 6280 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2017-02-10 15:30:48.803  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-02-10 15:30:48.803  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:30:48.804  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:30:48.804  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:30:48.804  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:30:48.804  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:30:48.804  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUsers belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:30:48.805  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:30:48.805  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:30:48.805  INFO 6280 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-02-10 15:30:48.812  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:30:48.812  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 15:30:48.812  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:30:48.812  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 15:30:48.819  INFO 6280 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:30:48.819  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:30:48.831  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:30:48.831  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:30:48.836  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.836  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.838  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.838  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.842  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.842  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.842  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.842  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.842  INFO 6280 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:30:48.843  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:30:48.846  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:30:48.847  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:30:48.848  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:30:48.848  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:30:48.849  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:30:48.849  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:30:48.849  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.849  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.849  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:30:48.850  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:30:48.850  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.850  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:30:48.850  INFO 6280 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 15:30:48.850  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 15:30:48.851  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:30:48.852  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:30:48.854  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:30:48.855  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:30:48.855  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:30:48.855  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:30:48.857  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:30:48.857  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:30:48.858  INFO 6280 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:30:48.858  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:30:48.858  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:30:48.859  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 15:30:48.859  INFO 6280 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:30:48.859  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 15:30:48.860  INFO 6280 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 15:30:48.860  INFO 6280 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 15:30:48.861  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:30:48.862  INFO 6280 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:30:48.874  INFO 6280 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-02-10 15:30:48.876  INFO 6280 --- [restartedMain] c.g.u.DemoApplication                    : Started DemoApplication in 2.138 seconds (JVM running for 78.56)
+2017-02-10 15:30:52.612  INFO 6280 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-02-10 15:30:52.617  INFO 6280 --- [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2017-02-10 15:30:52.628  INFO 6280 --- [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2017-02-10 15:30:52.641  INFO 6280 --- [http-nio-8081-exec-1] c.g.u.a.WebLogAspect                     : Enter com.githup.ussheepsheep.web.UserController.login with args = [LoginForm(email=string, password=string)]
+2017-02-10 15:30:52.652  INFO 6280 --- [http-nio-8081-exec-1] c.g.u.a.WebLogAspect                     : Exit com.githup.ussheepsheep.web.UserController.login used 12 ms with result success
+2017-02-10 15:36:15.634  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : Starting DemoApplication on daren with PID 10524 (E:\githup\springboot_demo\target\classes started by yjServer1 in E:\githup\springboot_demo)
+2017-02-10 15:36:15.639  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : The following profiles are active: dev
+2017-02-10 15:36:15.742  INFO 10524 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b7f03ef: startup date [Fri Feb 10 15:36:15 CST 2017]; root of context hierarchy
+2017-02-10 15:36:17.290  INFO 10524 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:36:17.380  INFO 10524 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:36:18.056  INFO 10524 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-02-10 15:36:18.069  INFO 10524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-02-10 15:36:18.071  INFO 10524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-02-10 15:36:18.162  INFO 10524 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-02-10 15:36:18.163  INFO 10524 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2425 ms
+2017-02-10 15:36:18.358  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-02-10 15:36:18.362  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-02-10 15:36:18.362  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-02-10 15:36:18.363  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-02-10 15:36:18.363  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-02-10 15:36:19.389  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.login(com.githup.ussheepsheep.domain.form.LoginForm)
+2017-02-10 15:36:19.390  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/users],methods=[GET]}" onto public java.util.List<com.githup.ussheepsheep.domain.User> com.githup.ussheepsheep.web.UserController.getUsers()
+2017-02-10 15:36:19.390  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public com.githup.ussheepsheep.domain.User com.githup.ussheepsheep.web.UserController.getUser(java.lang.Long)
+2017-02-10 15:36:19.391  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.addUser(com.githup.ussheepsheep.domain.User)
+2017-02-10 15:36:19.391  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-02-10 15:36:19.394  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-02-10 15:36:19.394  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-02-10 15:36:19.395  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-02-10 15:36:19.398  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-10 15:36:19.398  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-10 15:36:19.708  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b7f03ef: startup date [Fri Feb 10 15:36:15 CST 2017]; root of context hierarchy
+2017-02-10 15:36:19.782  INFO 10524 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:36:19.782  INFO 10524 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:36:19.825  INFO 10524 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:36:20.093  INFO 10524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-02-10 15:36:20.161  INFO 10524 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-10 15:36:20.180  INFO 10524 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-02-10 15:36:20.208  INFO 10524 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2017-02-10 15:36:20.216  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-02-10 15:36:20.221  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:36:20.223  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:36:20.224  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:36:20.225  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:36:20.225  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:36:20.225  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUsers belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:36:20.226  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:36:20.226  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:36:20.229  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-02-10 15:36:20.255  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:36:20.255  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 15:36:20.259  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:36:20.259  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 15:36:20.271  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:36:20.271  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:36:20.296  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:36:20.299  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:36:20.305  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.306  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.308  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.308  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.340  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.341  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.341  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.341  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.342  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:36:20.342  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:36:20.351  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:36:20.353  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:36:20.355  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:36:20.355  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:36:20.355  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:36:20.355  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:36:20.356  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.356  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.356  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:36:20.356  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:36:20.357  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.357  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:36:20.357  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 15:36:20.357  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 15:36:20.358  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:36:20.379  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:36:20.384  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:36:20.384  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:36:20.385  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:36:20.385  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:36:20.388  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:36:20.388  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:36:20.391  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:36:20.392  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:36:20.393  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:36:20.393  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 15:36:20.393  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:36:20.394  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 15:36:20.394  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 15:36:20.394  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 15:36:20.397  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:36:20.399  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:36:20.475  INFO 10524 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-02-10 15:36:20.483  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : Started DemoApplication in 5.719 seconds (JVM running for 6.518)
+2017-02-10 15:37:09.815  INFO 10524 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b7f03ef: startup date [Fri Feb 10 15:36:15 CST 2017]; root of context hierarchy
+2017-02-10 15:37:09.826  INFO 10524 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-02-10 15:37:10.433  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : Starting DemoApplication on daren with PID 10524 (E:\githup\springboot_demo\target\classes started by yjServer1 in E:\githup\springboot_demo)
+2017-02-10 15:37:10.434  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : The following profiles are active: dev
+2017-02-10 15:37:10.438  INFO 10524 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f18caa0: startup date [Fri Feb 10 15:37:10 CST 2017]; root of context hierarchy
+2017-02-10 15:37:11.661  INFO 10524 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:37:11.668  INFO 10524 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:37:11.840  INFO 10524 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-02-10 15:37:11.841  INFO 10524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-02-10 15:37:11.841  INFO 10524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-02-10 15:37:11.853  INFO 10524 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-02-10 15:37:11.853  INFO 10524 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1415 ms
+2017-02-10 15:37:11.940  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-02-10 15:37:11.941  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-02-10 15:37:11.942  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-02-10 15:37:11.944  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-02-10 15:37:11.944  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-02-10 15:37:12.298  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.login(com.githup.ussheepsheep.domain.form.LoginForm)
+2017-02-10 15:37:12.298  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/users],methods=[GET]}" onto public java.util.List<com.githup.ussheepsheep.domain.User> com.githup.ussheepsheep.web.UserController.getUsers()
+2017-02-10 15:37:12.298  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public com.githup.ussheepsheep.domain.User com.githup.ussheepsheep.web.UserController.getUser(java.lang.Long)
+2017-02-10 15:37:12.298  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.addUser(com.githup.ussheepsheep.domain.User)
+2017-02-10 15:37:12.299  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-02-10 15:37:12.302  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-02-10 15:37:12.302  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-02-10 15:37:12.302  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-02-10 15:37:12.304  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-10 15:37:12.304  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-10 15:37:12.417  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f18caa0: startup date [Fri Feb 10 15:37:10 CST 2017]; root of context hierarchy
+2017-02-10 15:37:12.440  INFO 10524 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:37:12.442  INFO 10524 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:37:12.471  INFO 10524 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:37:12.578  INFO 10524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-02-10 15:37:12.632  INFO 10524 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-10 15:37:12.640  INFO 10524 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-02-10 15:37:12.641  INFO 10524 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2017-02-10 15:37:12.642  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-02-10 15:37:12.643  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:37:12.643  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:37:12.643  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:37:12.644  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:37:12.644  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:37:12.644  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUsers belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:37:12.645  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:37:12.645  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:37:12.645  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-02-10 15:37:12.650  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:37:12.651  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 15:37:12.651  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:37:12.651  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 15:37:12.657  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:37:12.657  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:37:12.667  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:37:12.668  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:37:12.670  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.670  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.671  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.672  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.675  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.675  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.676  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.676  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.676  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:37:12.676  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:37:12.678  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:37:12.679  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:37:12.681  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:37:12.681  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:37:12.682  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:37:12.682  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:37:12.683  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.683  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.683  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:37:12.683  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:37:12.684  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.684  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:37:12.684  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 15:37:12.684  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 15:37:12.685  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:37:12.686  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:37:12.688  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:37:12.688  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:37:12.689  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:37:12.689  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:37:12.690  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:37:12.690  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:37:12.690  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:37:12.691  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:37:12.691  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:37:12.691  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 15:37:12.691  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:37:12.691  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 15:37:12.692  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 15:37:12.692  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 15:37:12.694  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:37:12.695  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:37:12.705  INFO 10524 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-02-10 15:37:12.709  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : Started DemoApplication in 2.437 seconds (JVM running for 58.743)
+2017-02-10 15:37:17.201  INFO 10524 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-02-10 15:37:17.202  INFO 10524 --- [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2017-02-10 15:37:17.237  INFO 10524 --- [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2017-02-10 15:37:17.322  INFO 10524 --- [http-nio-8081-exec-1] c.g.u.a.WebLogAspect                     : 0:0:0:0:0:0:0:1 enter com.githup.ussheepsheep.web.UserController.login with args = [LoginForm(email=string, password=string)]
+2017-02-10 15:37:17.328  INFO 10524 --- [http-nio-8081-exec-1] c.g.u.a.WebLogAspect                     : 0:0:0:0:0:0:0:1 exit com.githup.ussheepsheep.web.UserController.login used 6 ms with result : success
+2017-02-10 15:45:13.403  INFO 10524 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f18caa0: startup date [Fri Feb 10 15:37:10 CST 2017]; root of context hierarchy
+2017-02-10 15:45:13.408  INFO 10524 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-02-10 15:45:14.174  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : Starting DemoApplication on daren with PID 10524 (E:\githup\springboot_demo\target\classes started by yjServer1 in E:\githup\springboot_demo)
+2017-02-10 15:45:14.175  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : The following profiles are active: dev
+2017-02-10 15:45:14.178  INFO 10524 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3219a486: startup date [Fri Feb 10 15:45:14 CST 2017]; root of context hierarchy
+2017-02-10 15:45:14.840  INFO 10524 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:45:14.845  INFO 10524 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-10 15:45:14.977  INFO 10524 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-02-10 15:45:14.977  INFO 10524 --- [restartedMain] o.a.c.c.StandardService                  : Starting service Tomcat
+2017-02-10 15:45:14.978  INFO 10524 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-02-10 15:45:15.034  INFO 10524 --- [localhost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2017-02-10 15:45:15.034  INFO 10524 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 857 ms
+2017-02-10 15:45:15.089  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-02-10 15:45:15.090  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-02-10 15:45:15.090  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-02-10 15:45:15.090  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-02-10 15:45:15.090  INFO 10524 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2017-02-10 15:45:15.489  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.login(com.githup.ussheepsheep.domain.form.LoginForm)
+2017-02-10 15:45:15.490  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/users],methods=[GET]}" onto public java.util.List<com.githup.ussheepsheep.domain.User> com.githup.ussheepsheep.web.UserController.getUsers()
+2017-02-10 15:45:15.490  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{id}],methods=[GET]}" onto public com.githup.ussheepsheep.domain.User com.githup.ussheepsheep.web.UserController.getUser(java.lang.Long)
+2017-02-10 15:45:15.491  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/],methods=[POST]}" onto public java.lang.String com.githup.ussheepsheep.web.UserController.addUser(com.githup.ussheepsheep.domain.User)
+2017-02-10 15:45:15.491  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2017-02-10 15:45:15.493  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2017-02-10 15:45:15.493  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2017-02-10 15:45:15.494  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2017-02-10 15:45:15.498  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-02-10 15:45:15.498  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-02-10 15:45:15.585  INFO 10524 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3219a486: startup date [Fri Feb 10 15:45:14 CST 2017]; root of context hierarchy
+2017-02-10 15:45:15.602  INFO 10524 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:45:15.602  INFO 10524 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:45:15.701  INFO 10524 --- [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-02-10 15:45:15.868  INFO 10524 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-02-10 15:45:15.993  INFO 10524 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-02-10 15:45:15.999  INFO 10524 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2017-02-10 15:45:16.000  INFO 10524 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2017-02-10 15:45:16.016  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2017-02-10 15:45:16.016  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:45:16.017  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:45:16.017  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:45:16.017  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:45:16.044  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:45:16.045  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUsers belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:45:16.045  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:45:16.045  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.githup.ussheepsheep.web.UserController}]] 
+2017-02-10 15:45:16.046  INFO 10524 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2017-02-10 15:45:16.110  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:45:16.110  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 15:45:16.111  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:45:16.111  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 15:45:16.117  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:45:16.117  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/.com.githup.ussheepsheep.web.UserController.addUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:45:16.127  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:45:16.128  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addUser was user-controller
+2017-02-10 15:45:16.130  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.131  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.131  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.132  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.135  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.135  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.136  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.136  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.136  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:45:16.136  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/{id}.com.githup.ussheepsheep.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2017-02-10 15:45:16.139  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:45:16.140  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2017-02-10 15:45:16.141  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:45:16.142  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:45:16.142  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:45:16.142  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:45:16.142  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.142  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.143  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:45:16.143  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key java.util.List<com.githup.ussheepsheep.domain.User>(true)
+2017-02-10 15:45:16.143  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.143  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.User(true)
+2017-02-10 15:45:16.144  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 15:45:16.144  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/users.com.githup.ussheepsheep.web.UserController.getUsers.DefaultGenericTypeNamingStrategy
+2017-02-10 15:45:16.145  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:45:16.146  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUsers was user-controller
+2017-02-10 15:45:16.147  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:45:16.147  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:45:16.147  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:45:16.148  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:45:16.149  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:45:16.149  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:45:16.149  INFO 10524 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:45:16.149  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelProperties with key com.githup.ussheepsheep.domain.form.LoginForm(false)
+2017-02-10 15:45:16.150  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:45:16.150  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache models with key java.lang.String(true)
+2017-02-10 15:45:16.150  INFO 10524 --- [restartedMain] s.d.s.ModelContextKeyGenerator           : Cache Key Generated: java.lang.String(true)
+2017-02-10 15:45:16.150  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2017-02-10 15:45:16.150  INFO 10524 --- [restartedMain] s.d.s.w.OperationsKeyGenerator           : Cache key generated: /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 15:45:16.150  INFO 10524 --- [restartedMain] s.d.s.w.c.CachingAspect                  : Caching aspect applied for cache operations with key /user/login.com.githup.ussheepsheep.web.UserController.login.DefaultGenericTypeNamingStrategy
+2017-02-10 15:45:16.152  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:45:16.153  INFO 10524 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was user-controller
+2017-02-10 15:45:16.180  INFO 10524 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-02-10 15:45:16.182  INFO 10524 --- [restartedMain] c.g.u.i.InitCommand                      : server uuid : 179892, port : 8081, goodDesc : dev enviroment
+2017-02-10 15:45:16.183  INFO 10524 --- [restartedMain] c.g.u.DemoApplication                    : Started DemoApplication in 2.089 seconds (JVM running for 542.212)
+2017-02-10 17:32:59.581  INFO 10524 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3219a486: startup date [Fri Feb 10 15:45:14 CST 2017]; root of context hierarchy
+2017-02-10 17:32:59.620  INFO 10524 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
