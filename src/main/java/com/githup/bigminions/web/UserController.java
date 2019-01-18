@@ -1,7 +1,7 @@
-package com.githup.ussheepsheep.web;
+package com.githup.bigminions.web;
 
-import com.githup.ussheepsheep.domain.form.UserForm;
-import com.githup.ussheepsheep.service.UserService;
+import com.githup.bigminions.domain.form.UserForm;
+import com.githup.bigminions.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

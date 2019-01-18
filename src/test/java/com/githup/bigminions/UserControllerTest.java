@@ -1,6 +1,6 @@
-//package com.githup.ussheepsheep;
+//package com.githup.bigminions;
 //
-//import com.githup.ussheepsheep.web.UserController;
+//import com.githup.bigminions.web.UserController;
 //import org.junit.Before;
 //import org.junit.Test;
 //import org.junit.runner.RunWith;

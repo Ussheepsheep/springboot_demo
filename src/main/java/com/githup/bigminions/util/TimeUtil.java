@@ -1,4 +1,4 @@
-package com.githup.ussheepsheep.util;
+package com.githup.bigminions.util;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

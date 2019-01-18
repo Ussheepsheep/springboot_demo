@@ -1,4 +1,4 @@
-package com.githup.ussheepsheep.handler;
+package com.githup.bigminions.handler;
 
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;

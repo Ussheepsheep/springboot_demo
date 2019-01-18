@@ -1,4 +1,4 @@
-package com.githup.ussheepsheep.domain.form;
+package com.githup.bigminions.domain.form;
 
 import lombok.Data;
 

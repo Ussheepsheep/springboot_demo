@@ -1,4 +1,4 @@
-package com.githup.ussheepsheep.util;
+package com.githup.bigminions.util;
 
 /**
  * Created by daren on 2017/2/24.

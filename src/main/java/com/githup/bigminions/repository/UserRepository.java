@@ -1,6 +1,6 @@
-package com.githup.ussheepsheep.repository;
+package com.githup.bigminions.repository;
 
-import com.githup.ussheepsheep.domain.User;
+import com.githup.bigminions.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

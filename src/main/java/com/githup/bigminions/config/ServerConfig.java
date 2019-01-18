@@ -1,4 +1,4 @@
-package com.githup.ussheepsheep.config;
+package com.githup.bigminions.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

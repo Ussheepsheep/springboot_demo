@@ -1,6 +1,6 @@
-package com.githup.ussheepsheep.init;
+package com.githup.bigminions.init;
 
-import com.githup.ussheepsheep.config.ServerConfig;
+import com.githup.bigminions.config.ServerConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

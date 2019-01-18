@@ -1,7 +1,7 @@
-package com.githup.ussheepsheep.service;
+package com.githup.bigminions.service;
 
-import com.githup.ussheepsheep.domain.User;
-import com.githup.ussheepsheep.repository.UserRepository;
+import com.githup.bigminions.domain.User;
+import com.githup.bigminions.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;

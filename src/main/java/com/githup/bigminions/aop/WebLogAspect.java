@@ -1,4 +1,4 @@
-package com.githup.ussheepsheep.aop;
+package com.githup.bigminions.aop;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,7 +22,7 @@ public class WebLogAspect {
 
     private Logger logger = LogManager.getLogger(getClass());
 
-    @Pointcut("execution(public * com.githup.ussheepsheep.web..*.*(..))")
+    @Pointcut("execution(public * com.githup.bigminions.web..*.*(..))")
     public void weblog() {
     }
 

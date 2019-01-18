@@ -1,4 +1,4 @@
-package com.githup.ussheepsheep;
+package com.githup.bigminions;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

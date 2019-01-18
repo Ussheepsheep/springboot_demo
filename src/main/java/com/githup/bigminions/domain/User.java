@@ -1,4 +1,4 @@
-package com.githup.ussheepsheep.domain;
+package com.githup.bigminions.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModelProperty;
